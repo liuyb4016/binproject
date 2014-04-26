@@ -55,6 +55,7 @@ public class FileListAuto {
 	public static void main(String[] args) throws IOException {
 		new FileListAuto().generateFilesFromFileList();
 	}
+	@SuppressWarnings("resource")
 	public void generateFilesFromFileList() throws IOException{
 		DateFormat df = new SimpleDateFormat("yyyyMMddHHmm");
 		String outputRootPath = fileListPath.substring(0,fileListPath.lastIndexOf("/"));
